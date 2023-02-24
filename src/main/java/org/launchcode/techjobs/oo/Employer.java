@@ -2,11 +2,24 @@ package org.launchcode.techjobs.oo;
 
 import java.util.Objects;
 
-public class Employer {
+public class Employer extends JobField{
+    id;
+    static int nextId;
+    String value;
+    String getValue() {
+        return value;
+    }
+    int getId() {
+        return id;
+    }
+    @Override
+    String toString(){
 
-    private int id;
-    private static int nextId = 1;
-    private String value;
+    }
+
+//    private int id;
+//    private static int nextId = 1;
+//    private String value;
 
     public Employer() {
         id = nextId;
@@ -40,13 +53,13 @@ public class Employer {
 
     // Getters and Setters:
 
-    public int getId() {
-        return id;
-    }
+//    public int getId() {
+//        return id;
+//    }
 
-    public String getValue() {
-        return value;
-    }
+//    public String getValue() {
+//        return value;
+//    }
 
     public void setValue(String value) {
         this.value = value;
